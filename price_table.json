@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "origin": 11,
+      "destiny": 16,
+      "cost": 1.90
+    },
+    {
+      "origin": 16,
+      "destiny": 11,
+      "cost": 2.90
+    },
+    {
+      "origin": 11,
+      "destiny": 17,
+      "cost": 1.70
+    },
+    {
+      "origin": 17,
+      "destiny": 11,
+      "cost": 2.70
+    },
+    {
+      "origin": 11,
+      "destiny": 18,
+      "cost": 0.90
+    },
+    {
+      "origin": 18,
+      "destiny": 11,
+      "cost": 1.90
+    }
+  ],
+  "result": true
+}
