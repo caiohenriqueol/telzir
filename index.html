@@ -7,48 +7,61 @@
     <title>Telzir - FaleMais</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="resources/css/menu.css" rel="stylesheet">
+    <link href="resources/css/main.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand menu-font" href="#">Telzir</a>
-                <img id="menu-logo" src="resources/img/menu-logo.png">
+                <img id="menu-logo" src="resources/img/menu-logo.png"/>
             </div>
         </div>
     </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <h1 class="title-font">Telzir FaleMais</h1>
             
-                <div class="panel panel-default">
-                    <div class="panel-heading">Preços por região</div>
-                    <div class="panel-body">
-                        <p>A <strong>Telzir</strong> está lançando um produto, o <strong>Telzir FaleMais</strong>.</p>
-                        <p>Confira nossos preços:</p>
-                    </div>
+    <h1 class="title-font main-title">Economize com <strong>Telzir FaleMais</strong>!</h1>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Origem</th>
-                                        <th>Destino</th>
-                                        <th>$/min</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+    <hr>
+
+    <!--PLANS CARDS-->
+    <div class="row">
+        <div class="center-element">
+            <div class="col-sm-12 col-md-4 card">
+                <div class="card-header">
+                    <h1 class="plans-name-card">Telzir FaleMais</h1>
+                    <p class="card-size">30</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 card">
+                <div class="card-header">
+                    <h1 class="plans-name-card">Telzir FaleMais</h1>
+                    <p class="card-size">60</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 card">
+                <div class="card-header">
+                    <h1 class="plans-name-card">Telzir FaleMais</h1>
+                    <p class="card-size">120</p>
                 </div>
             </div>
         </div>
+    </div> 
+
+    <!--PRICE TABLE-->
+    <div class="center-element">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="active">
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>$/min</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
