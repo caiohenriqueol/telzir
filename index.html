@@ -18,54 +18,103 @@
             </div>
         </div>
     </nav>
-            
-    <h1 class="title-font main-title">Economize com <strong>Telzir FaleMais</strong>!</h1>
 
-    <hr>
+    <div class="center-element">
+        <h1 class="title-font main-title">Economize com <strong>Telzir FaleMais</strong>!</h1>
+        <hr>
 
-    <!--PLANS CARDS-->
-    <div class="row">
-        <div class="center-element">
-            <div class="col-sm-12 col-md-4 card">
-                <div class="card-header">
-                    <h1 class="plans-name-card">Telzir FaleMais</h1>
-                    <p class="card-size">30</p>
+        <!-- PLANS CARDS -->
+        <div class="row plans-card-row">
+            <div class="plans"></div>
+        </div>
+
+        <!-- PLANS CHOICE -->
+        <h3 class="text-font">Simule quanto gastaria com cada plano</h3>
+
+        <!-- PLAN SIMULATION -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="btn-group button-area">
+                    <button
+                        type="button"
+                        class="btn btn-default dropdown-toggle origin button-area"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        DDD de origem <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="origin"></ul>
                 </div>
             </div>
-
-            <div class="col-sm-12 col-md-4 card">
-                <div class="card-header">
-                    <h1 class="plans-name-card">Telzir FaleMais</h1>
-                    <p class="card-size">60</p>
+            <div class="col-md-3">
+                <div class="btn-group button-area">
+                    <button
+                        type="button"
+                        class="btn btn-default dropdown-toggle destiny button-area"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        DDD de destino <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="destiny"></ul>
                 </div>
             </div>
-
-            <div class="col-sm-12 col-md-4 card">
-                <div class="card-header">
-                    <h1 class="plans-name-card">Telzir FaleMais</h1>
-                    <p class="card-size">120</p>
+            <div class="col-md-3">
+                <div class="btn-group button-area">
+                    <button
+                        type="button"
+                        class="btn btn-default dropdown-toggle plan button-area"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        Plano FaleMais  <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="plan"></ul>
                 </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        class="form-control minutes"
+                        placeholder="min/mês"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">minutos</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-10">
+                <input class="btn btn-default button-area" type="submit" value="Simular" id="simulation">
+            </div>
+            <div class="col-md-12">
+                <div class="simulation-result"></div>
             </div>
         </div>
-    </div> 
 
-    <!--PRICE TABLE-->
-    <div class="center-element">
-        <table class="table table-bordered">
-            <thead>
-                <tr class="active">
-                    <th>Origem</th>
-                    <th>Destino</th>
-                    <th>$/min</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <!-- PRICE TABLE -->
+        <div class="panel panel-default">
+            <div class="panel-heading">Confira os preços para sua região</div>
+            <div class="panel-body">
+            <p>Abaixo você encontra os valores por minuto de cada região. Confira!</p>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                  <tr class="active">
+                      <th>Origem</th>
+                      <th>Destino</th>
+                      <th>$/min</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="resources/js/main.js"></script>
+    <script src="resources/js/page.information.js"></script>
+    <script src="resources/js/rest.data.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
