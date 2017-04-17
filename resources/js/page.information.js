@@ -51,34 +51,4 @@ $(document).ready(function(){
         event.preventDefault();
         $(".plan").text($(this).text());
     });
-
-    // SIMULATION TABLE
-    $("#simulation").on('click', function() {
-        if (!$(".simulation-values").length) {
-            $(".simulation-result")
-                .append("<table class='table table-bordered simulation-values'>"+
-                            "<thead>"+
-                                "<tr class='active'>"+
-                                    "<th>Origem</th>"+
-                                    "<th>Destino</th>"+
-                                    "<th>Tempo</th>"+
-                                    "<th>Plano FaleMais</th>"+
-                                    "<th>Com FaleMais</th>"+
-                                    "<th>Sem FaleMais</th>"+
-                                "</tr>"+
-                            "</thead>"+
-                        "</table>");
-        }
-        $(".simulation-values")
-            .append("<tbody>"+
-                        "<tr class='active'>"+
-                            "<th>"+$(".origin").text()+"</th>"+
-                            "<th>"+$(".destiny").text()+"</th>"+
-                            "<th>"+$(".minutes").val()+"</th>"+
-                            "<th>"+$(".plan").text()+"</th>"+
-                            "<th></th>"+
-                            "<th></th>"+
-                        "</tr>"+
-                    "</tbody>");
-    });
 });

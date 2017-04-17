@@ -38,6 +38,10 @@
     font-family: NewGothicMT;
 }
 
+.notes {
+    font-size: 7px;
+}
+
 /*BODY*/
 hr {
     margin: 40px auto;
